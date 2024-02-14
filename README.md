@@ -31,13 +31,16 @@ To display the image associated with a category or tag in your theme, you can us
 
 ```php
 $term_id = get_queried_object_id(); // Gets the current term ID
-$image_id = get_term_meta($term_id, 'perseo-category-image-id', true); // Replace 'perseo-category-image-id' with your actual meta key
+$image_id = get_term_meta($term_id, 'perseo-category-image-id', true);
+```
+Replace 'perseo-category-image-id' with your actual meta key
 
+```php
 if ( ! empty($image_id) ) {
-    echo wp_get_attachment_image( $image_id, 'full' ); // Outputs the image HTML. Replace 'full' with any registered image size.
+    echo wp_get_attachment_image( $image_id, 'full' );
 }
 ```
-
+Replace 'full' with any registered image size.
 If you prefer to use the image URL for background images or CSS, you can retrieve the URL like so:
 
 ```php
