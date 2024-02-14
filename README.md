@@ -36,6 +36,7 @@ $image_id = get_term_meta($term_id, 'perseo-category-image-id', true); // Replac
 if ( ! empty($image_id) ) {
     echo wp_get_attachment_image( $image_id, 'full' ); // Outputs the image HTML. Replace 'full' with any registered image size.
 }
+```php
 
 If you prefer to use the image URL for background images or CSS, you can retrieve the URL like so:
 
@@ -44,6 +45,7 @@ $image_url = wp_get_attachment_url( $image_id );
 if ( ! empty($image_url) ) {
     echo 'background-image: url(' . esc_url($image_url) . ');'; // Use this in an inline style attribute, for example
 }
+```php
 
 ## Customization and extensibility
 
