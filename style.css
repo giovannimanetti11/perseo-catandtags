@@ -1,0 +1,14 @@
+#category-image-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#category-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ct_tax_media_button, .ct_tax_media_remove {
+    margin-top: 10px;
+    margin-right: 5px;
+}
