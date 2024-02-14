@@ -30,7 +30,7 @@ The Perseo - Category and Tags Images plugin allows you to add and manage images
 To display the image associated with a category or tag in your theme, you can use the following PHP code snippet. This example demonstrates how to retrieve and display the image for the current category or tag on a taxonomy archive page:
 
 ```php
-$term_id = get_queried_object_id(); // Gets the current term ID
+$term_id = get_queried_object_id();
 $image_id = get_term_meta($term_id, 'perseo-category-image-id', true);
 ```
 Replace 'perseo-category-image-id' with your actual meta key
