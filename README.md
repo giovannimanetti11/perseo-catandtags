@@ -46,7 +46,7 @@ If you prefer to use the image URL for background images or CSS, you can retriev
 ```php
 $image_url = wp_get_attachment_url( $image_id );
 if ( ! empty($image_url) ) {
-    echo 'background-image: url(' . esc_url($image_url) . ');'; // Use this in an inline style attribute, for example
+    echo 'background-image: url(' . esc_url($image_url) . ');';
 }
 ```
 
