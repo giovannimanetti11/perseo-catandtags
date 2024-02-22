@@ -10,7 +10,7 @@ The Perseo - Category and Tags Images plugin allows you to add and manage images
 
 ## Installation
 
-1. **Download the plugin**: Download the latest version of the Perseo plugin from the GitHub repository.
+1. **Download the plugin**: Download the latest version of the The Perseo - Category and Tags plugin from the GitHub repository.
 2. **Upload to WordPress**:
    - Navigate to the WordPress admin area.
    - Go to `Plugins` > `Add New` > `Upload Plugin`.
