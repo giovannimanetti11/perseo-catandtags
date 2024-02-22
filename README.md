@@ -4,18 +4,18 @@ The Perseo - Category and Tags Images plugin allows you to add and manage images
 
 ## Features
 
-- **Upload Images for Categories and Tags**: Easily assign an image to each term within your WordPress taxonomy.
-- **Simple Administration Interface**: Use the WordPress native media uploader for easy management of taxonomy images.
-- **Flexible Image Retrieval**: Retrieve and display the assigned images in your theme or through custom development.
+- **Upload images for categories and tags**: Easily assign an image to each term within your WordPress taxonomy.
+- **Simple administration interface**: Use the WordPress native media uploader for easy management of taxonomy images.
+- **Flexible image retrieval**: Retrieve and display the assigned images in your theme or through custom development.
 
 ## Installation
 
-1. **Download the Plugin**: Download the latest version of the Perseo plugin from the GitHub repository.
+1. **Download the plugin**: Download the latest version of the Perseo plugin from the GitHub repository.
 2. **Upload to WordPress**:
    - Navigate to the WordPress admin area.
    - Go to `Plugins` > `Add New` > `Upload Plugin`.
    - Choose the downloaded plugin file (`perseo-catandtags.zip`) and click `Install Now`.
-3. **Activate the Plugin**: After installation, activate the plugin through the 'Plugins' menu in WordPress.
+3. **Activate the plugin**: After installation, activate the plugin through the 'Plugins' menu in WordPress.
 
 ## Usage
 
