@@ -4,13 +4,13 @@ The Perseo - Category and Tags Images plugin allows you to add and manage images
 
 ## Features
 
-- **Upload images for categories and tags**: Easily assign an image to each term within your WordPress taxonomy.
-- **Simple administration interface**: Use the WordPress native media uploader for easy management of taxonomy images.
-- **Flexible image retrieval**: Retrieve and display the assigned images in your theme or through custom development.
+- **Upload images for categories and tags**: load an image on each taxonomy within the WordPress related page.
+- **Simple interface**: use the WordPress native media uploader for easy management of taxonomy images.
+- **Easy displaying**: retrieve and display the assigned images in your theme or through custom development.
 
 ## Installation
 
-1. **Download the plugin**: Download the latest version of the The Perseo - Category and Tags plugin from the GitHub repository.
+1. **Download the plugin**: download the latest version of the The Perseo - Category and Tags plugin from the GitHub repository.
 2. **Upload to WordPress**:
    - Navigate to the WordPress admin area.
    - Go to `Plugins` > `Add New` > `Upload Plugin`.
@@ -23,17 +23,16 @@ The Perseo - Category and Tags Images plugin allows you to add and manage images
 
 1. Go to the `Posts` > `Categories` or `Posts` > `Tags` page in the WordPress admin area.
 2. Add a new category or tag, or edit an existing one.
-3. You'll see an option to upload an image for the category or tag. Use the WordPress media uploader to select or upload a new image.
+3. You'll see an option to upload an image for that specific category or tag. Use the WordPress media uploader to select or upload a new image.
 
-### Retrieving and displaying images in your theme
+### Displaying images in your theme
 
-To display the image associated with a category or tag in your theme, you can use the following PHP code snippet. This example demonstrates how to retrieve and display the image for the current category or tag on a taxonomy archive page:
+To display the image in your theme, you can use the following PHP code snippet. This example shows how to display the image for the current category or tag on a taxonomy archive page:
 
 ```php
 $term_id = get_queried_object_id();
 $image_id = get_term_meta($term_id, 'perseo-category-image-id', true);
 ```
-Replace 'perseo-category-image-id' with your actual meta key
 
 ```php
 if ( ! empty($image_id) ) {
@@ -41,16 +40,8 @@ if ( ! empty($image_id) ) {
 }
 ```
 Replace 'full' with any registered image size.
-If you prefer to use the image URL for background images or CSS, you can retrieve the URL like so:
 
-```php
-$image_url = wp_get_attachment_url( $image_id );
-if ( ! empty($image_url) ) {
-    echo 'background-image: url(' . esc_url($image_url) . ');';
-}
-```
-
-## Customization and extensibility
+## Customization
 
 Perseo - Category and Tags is designed to be simple to use but also flexible for developers. You can extend its functionality or integrate it with your theme by using WordPress hooks and the provided metadata. This flexibility allows you to customize how images are displayed or even add additional metadata to each term, enhancing your site's taxonomy.
 
