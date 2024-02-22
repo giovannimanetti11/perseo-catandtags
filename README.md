@@ -52,7 +52,7 @@ if ( ! empty($image_url) ) {
 
 ## Customization and extensibility
 
-Perseo is designed to be simple to use but also flexible for developers. You can extend its functionality or integrate it with your theme by using WordPress hooks and the provided metadata. This flexibility allows you to customize how images are displayed or even add additional metadata to each term, enhancing your site's taxonomy.
+Perseo - Category and Tags is designed to be simple to use but also flexible for developers. You can extend its functionality or integrate it with your theme by using WordPress hooks and the provided metadata. This flexibility allows you to customize how images are displayed or even add additional metadata to each term, enhancing your site's taxonomy.
 
 ## Contributing
 
